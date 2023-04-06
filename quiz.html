@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+    </script>
+    <script src="quiz.js"></script>
+    <style>
+      .question {
+        margin-bottom: 10px;
+      }
+      .choices {
+        margin-bottom: 20px;
+        list-style: none;
+      }
+      .choice {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+      .choice.active {
+        font-weight: bold;
+      }
+      .choice.correct {
+        background-color: lightgreen;
+      }
+      .choice.incorrect {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quiz">
+      <h1>Quiz</h1>
+    </div>
+    <button id="check">Check Answers</button>
+    <div id="score"></div>
+  </body>
+</html>
